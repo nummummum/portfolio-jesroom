@@ -1,0 +1,65 @@
+/////////////
+모델을 변환시킨다.
+
+export function Model(props) {
+  const { nodes, materials } = useGLTF("/gltfs/objects/computer.gltf");
+  return (
+    <group {...props} dispose={null}>
+      <group position={[0, -0.8, 0]} scale={0.81}>
+        <mesh
+          geometry={nodes.computer_body.geometry}
+          material={materials["computer base mat"]}
+          position={[0, 1, 1.26]}
+          scale={[1, 1, 0.51]}
+        />
+        <group position={[0.73, 0.03, -0.3]} scale={[0.39, 0.04, 1.05]}>
+          <mesh
+            geometry={nodes.Cube013.geometry}
+            material={materials["computer base mat"]}
+            material-color={props.customColor.color1}
+          />
+          <mesh
+            geometry={nodes.Cube013_1.geometry}
+            material={materials["keyboard normal mat"]}
+            material-color={props.customColor.color2}
+          />
+        </group>
+        <mesh
+          geometry={nodes.monitor_top.geometry}
+          material={materials["computer base mat"]}
+          position={[-0.39, 1.25, -0.33]}
+          scale={[0.65, 0.56, 0.8]}
+        >
+          <mesh
+            geometry={nodes.monitor_bot.geometry}
+            material={materials["computer base mat"]}
+            position={[0, -1.9, -0.01]}
+            scale={[0.87, 0.31, 0.82]}
+          />
+          <mesh
+            geometry={nodes.monitor_mid.geometry}
+            material={materials["computer base mat"]}
+            position={[0, -1.27, -0.01]}
+            scale={[0.33, 0.33, 0.27]}
+          />
+        </mesh>
+        <mesh
+          geometry={nodes.mouse.geometry}
+          material={materials["computer base mat"]}
+          position={[0.77, 0.1, -1.54]}
+        >
+          <mesh
+            geometry={nodes.mouse_line.geometry}
+            material={materials["computer base mat"]}
+            position={[-0.77, -0.07, 1.54]}
+          />
+        </mesh>
+      </group>
+    </group>
+  );
+}
+
+
+<Model customColor={{ color1: "red", color2: "blue" }} />
+캔버스안에 추가시킨다
+/////////////

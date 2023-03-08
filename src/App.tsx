@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./common.scss";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import RoomPage from "./pages/RoomPage";
+import FurniturePage from "./pages/FurniturePage";
+import CartPage from "./pages/CartPage";
+import ErrorPage from "./pages/ErrorPage";
+import { ErrorBoundary } from "react-error-boundary";
+import Header from "./components/Header";
+import IntroPage from "./pages/IntroPage";
+import RoomDetailPage from "./pages/RoomDetailPage";
+import FurnitureDetailPage from "./pages/FurnitureDetailPage";
+import AddFurniture from "./components/AddFurniture";
+import AddRoom from "./components/AddRoom";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary fallback={<ErrorPage />}>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route index element={<MainPage />} />
+          <Route path="intro" element={<IntroPage />} />
+          <Route path="room" element={<RoomPage />} />
+          <Route path="room/:id" element={<RoomDetailPage />} />
+          <Route path="furniture" element={<FurniturePage />} />
+          <Route path="furniture/:id" element={<FurnitureDetailPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+      </BrowserRouter>
+    </ErrorBoundary>
   );
 }
 

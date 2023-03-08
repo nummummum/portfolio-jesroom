@@ -1,0 +1,163 @@
+.cartpage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(192, 184, 178, 0.53);
+  min-height: 100vh;
+  height: fit-content;
+  .cart_title_top {
+    margin: 140px auto 20px;
+    display: block;
+    position: relative;
+    font-weight: 600;
+  }
+
+  .cashreceipt {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    border: 1px solid #b4b4b4;
+    background-color: white;
+    padding: 20px;
+    .cart_title {
+      font-weight: 600;
+      margin: 16px 0;
+    }
+    .buy_room_wrap {
+      li {
+        .item_wrap {
+          display: flex;
+          position: relative;
+          padding-bottom: 16px;
+          border-bottom: 1px solid #b4b4b4;
+          .item_img {
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+          }
+          .item_text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 26px;
+            .item_title {
+              margin: 8px 0;
+            }
+            .item_price {
+              margin: 8px 0;
+            }
+          }
+          .item_detail {
+            display: block;
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+            color: #0da6ff;
+            cursor: pointer;
+          }
+        }
+        .detail_clicked {
+          margin: 10px 0;
+          display: none;
+          ul {
+            li {
+              display: flex;
+              position: relative;
+              align-items: center;
+              border: 1px solid #b4b4b4;
+              padding: 4px;
+              margin: 10px 0;
+              .detail_img {
+                width: 40px;
+                height: 40px;
+                background-color: aliceblue;
+              }
+              .detail_title,
+              .detail_price {
+                font-size: 14px;
+                font-weight: 600;
+              }
+              .detail_title {
+                position: relative;
+                margin-left: 20px;
+              }
+              .detail_price {
+                position: absolute;
+                right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .buy_furniture_wrap {
+      li {
+        display: flex;
+        margin: 10px 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #b4b4b4;
+        align-items: center;
+        .item_img {
+          width: 80px;
+          height: 80px;
+          background-color: aliceblue;
+        }
+        .item_text {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-left: 26px;
+          .item_title,
+          .item_price {
+            margin: 8px 0;
+            font-size: 14px;
+          }
+          .item_title {
+          }
+          .item_price {
+          }
+        }
+      }
+    }
+    .totalprice {
+      margin: 10px 0;
+      font-size: 18px;
+      font-weight: 600;
+      position: absolute;
+      right: 30px;
+    }
+    .btn_red_white {
+      cursor: pointer;
+      display: block;
+      width: 64px;
+      text-align: center;
+      position: relative;
+      margin: 60px auto 30px;
+      padding: 12px 22px 10px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 10px;
+      background-color: rgb(252, 70, 70);
+      color: white;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cart_title_top {
+    width: 840px;
+  }
+  .cashreceipt {
+    width: 800px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .cashreceipt {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cashreceipt {
+    width: 400px;
+  }
+}

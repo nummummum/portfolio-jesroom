@@ -1,0 +1,38 @@
+.header {
+  display: block;
+  position: relative;
+  z-index: 9;
+  .header_menu {
+    display: flex;
+    margin: 4px 0 0 16px;
+    position: absolute;
+    > li {
+      margin: 10px 10px;
+      padding: 10px 0;
+      cursor: pointer;
+      transition: all 0.4s ease;
+      border-bottom: 1px solid rgba(0, 0, 0, 0);
+      &:hover {
+        border-bottom: 1px solid white;
+      }
+    }
+  }
+  .cart_wrap {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    .cart {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(113, 113, 113);
+      border-radius: 50%;
+    }
+  }
+}

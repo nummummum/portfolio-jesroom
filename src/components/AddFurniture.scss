@@ -1,0 +1,12 @@
+.addform {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  .formtitle {
+    margin: 10px;
+  }
+  input {
+    margin: 0 10px;
+    height: 24px;
+  }
+}

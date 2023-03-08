@@ -1,0 +1,504 @@
+@media screen and (min-width: 1024px) {
+  .furniturepage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .topbanner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 300px;
+      margin: 0 80px;
+      border: 1px solid white;
+      border-radius: 25px;
+      background-color: rgb(131, 131, 131);
+      .banner_left {
+        margin-left: 80px;
+        width: 350px;
+        color: white;
+        .banner_title {
+          margin: 30px 0;
+          font-size: 30px;
+          font-weight: 500;
+        }
+        .banner_content {
+          line-height: 1.6;
+        }
+        .btn_gray_white2 {
+          cursor: pointer;
+          display: flex;
+          position: relative;
+          padding: 12px 14px;
+          color: white;
+          justify-content: center;
+          align-items: center;
+          width: 140px;
+          border: 1px solid white;
+          border-radius: 25px;
+          margin-top: 20px;
+          transition: all 0.2s ease;
+          &:hover {
+            transition: all 0.4s ease;
+            background-color: white;
+            color: black;
+          }
+        }
+      }
+      .banner_right {
+        display: block;
+        position: absolute;
+        right: 50px;
+        img {
+          width: 250px;
+          height: 250px;
+          box-sizing: border-box;
+          border-radius: 50%;
+          border: 1px solid white;
+        }
+      }
+    }
+    //////////판매 물품 종류//////////
+    .division {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      .division_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px;
+        padding: 5px;
+        width: 140px;
+        border: 2px solid #b4b4b4;
+        cursor: pointer;
+        &:hover {
+          .btn_gray {
+            background-color: rgb(113, 113, 113);
+            transition: all 0.2s ease;
+          }
+        }
+        .division_img {
+          margin-top: 10px;
+          width: 120px;
+          height: 120px;
+        }
+        .btn_gray {
+          display: flex;
+          position: relative;
+          width: 100px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          border: 1px solid rgb(113, 113, 113);
+          border-radius: 50px;
+          cursor: pointer;
+          font-weight: 300;
+          font-size: 14px;
+          transition: all 0.2s ease;
+          &:hover {
+            transition: all 0.2s ease;
+            background-color: rgb(113, 113, 113);
+          }
+        }
+      }
+    }
+    /////////////////////////////////
+
+    .furniture_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 280px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            line-height: 1.2;
+            font-size: 14px;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 10px 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .furniturepage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .topbanner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin: 0 80px;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgb(131, 131, 131);
+            .banner_left {
+              margin-left: 40px;
+              width: 300px;
+              color: white;
+              .banner_title {
+                margin: 30px 0;
+                font-size: 30px;
+                font-weight: 500;
+              }
+              .banner_content {
+                line-height: 1.6;
+              }
+              .btn_gray_white2 {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                padding: 12px 14px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                &:hover {
+                  transition: all 0.4s ease;
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+            .banner_right {
+              display: block;
+              position: absolute;
+              right: 50px;
+              img {
+                width: 200px;
+                height: 200px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
+    //////////판매 물품 종류//////////
+    .division {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      .division_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px;
+        padding: 5px;
+        width: 120px;
+        border: 2px solid #b4b4b4;
+        cursor: pointer;
+        &:hover {
+          .btn_gray {
+            background-color: rgb(113, 113, 113);
+            transition: all 0.2s ease;
+          }
+        }
+        .division_img {
+          margin-top: 10px;
+          width: 120px;
+          height: 120px;
+        }
+        .btn_gray {
+          display: flex;
+          position: relative;
+          width: 100px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          border: 1px solid rgb(113, 113, 113);
+          border-radius: 50px;
+          cursor: pointer;
+          font-weight: 300;
+          font-size: 14px;
+          transition: all 0.2s ease;
+          &:hover {
+            transition: all 0.2s ease;
+            background-color: rgb(113, 113, 113);
+          }
+        }
+      }
+    }
+    /////////////////////////////////
+
+    .furniture_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 280px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            line-height: 1.2;
+            font-size: 14px;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 10px 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .furniturepage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .topbanner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin: 0 40px;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgb(131, 131, 131);
+            .banner_left {
+              margin-left: 30px;
+              width: 280px;
+              color: white;
+              .banner_title {
+                margin: 16px 0;
+                font-size: 30px;
+                font-weight: 500;
+              }
+              .banner_content {
+                line-height: 1.6;
+              }
+              .btn_gray_white2 {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                padding: 12px 14px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                &:hover {
+                  transition: all 0.4s ease;
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+            .banner_right {
+              display: block;
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+              img {
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
+    //////////판매 물품 종류//////////
+    .division {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .division_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 4px;
+        padding: 5px;
+        width: 140px;
+        border: 2px solid #b4b4b4;
+        cursor: pointer;
+        &:hover {
+          .btn_gray {
+            background-color: rgb(113, 113, 113);
+            transition: all 0.2s ease;
+          }
+        }
+        .division_img {
+          margin-top: 10px;
+          width: 100px;
+          height: 100px;
+        }
+        .btn_gray {
+          display: flex;
+          position: relative;
+          width: 100px;
+          height: 30px;
+          justify-content: center;
+          align-items: center;
+          margin-top: 10px;
+          border: 1px solid rgb(113, 113, 113);
+          border-radius: 50px;
+          cursor: pointer;
+          font-weight: 300;
+          font-size: 14px;
+          transition: all 0.2s ease;
+          &:hover {
+            transition: all 0.2s ease;
+            background-color: rgb(113, 113, 113);
+          }
+        }
+      }
+    }
+    /////////////////////////////////
+
+    .furniture_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 280px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            line-height: 1.2;
+            font-size: 14px;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 10px 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

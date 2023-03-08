@@ -1,0 +1,47 @@
+.addform {
+  display: block;
+  position: relative;
+  padding-top: 100px;
+  .formtitle {
+    margin: 10px;
+  }
+  input {
+    margin: 0 10px;
+    height: 24px;
+  }
+}
+.detailobj {
+  display: block;
+  position: relative;
+  ul {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    li {
+      cursor: pointer;
+      display: flex;
+      position: relative;
+      width: 80px;
+      height: 30px;
+      background-color: #b4b4b4;
+      margin: 10px;
+      border-radius: 10px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      border: 1px solid white;
+      &:hover {
+        border: 1px solid black;
+      }
+    }
+  }
+}
+.showDetail {
+  display: inline-block;
+  margin: 10px;
+}
+.admitBtn {
+  display: block;
+  margin: 20px 10px;
+}

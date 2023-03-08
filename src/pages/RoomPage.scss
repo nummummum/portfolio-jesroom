@@ -1,0 +1,373 @@
+@media screen and (min-width: 1024px) {
+  .roompage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .topbanner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin: 0 80px;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgb(131, 131, 131);
+            .banner_left {
+              margin-left: 80px;
+              width: 350px;
+              color: white;
+              .banner_title {
+                margin: 30px 0;
+                font-size: 30px;
+                font-weight: 500;
+              }
+              .banner_content {
+                line-height: 1.6;
+              }
+              .btn_gray_white2 {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                padding: 12px 14px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                &:hover {
+                  transition: all 0.4s ease;
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+            .banner_right {
+              display: block;
+              position: absolute;
+              right: 50px;
+              img {
+                width: 250px;
+                height: 250px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .room_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 320px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            font-size: 14px;
+            line-height: 1.2;
+            max-height: 34px;
+            overflow: hidden;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 20px 0 0 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .roompage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .topbanner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin: 0 80px;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgb(131, 131, 131);
+            .banner_left {
+              margin-left: 40px;
+              width: 300px;
+              color: white;
+              .banner_title {
+                margin: 30px 0;
+                font-size: 30px;
+                font-weight: 500;
+              }
+              .banner_content {
+                line-height: 1.6;
+              }
+              .btn_gray_white2 {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                padding: 12px 14px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                &:hover {
+                  transition: all 0.4s ease;
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+            .banner_right {
+              display: block;
+              position: absolute;
+              right: 50px;
+              img {
+                width: 200px;
+                height: 200px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .room_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 320px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            font-size: 14px;
+            line-height: 1.2;
+            max-height: 34px;
+            overflow: hidden;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 20px 0 0 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .roompage {
+    display: block;
+    position: relative;
+    .header_sheld {
+      padding: 50px 0;
+    }
+    .swiper {
+      .swiper-wrapper {
+        .swiper-slide {
+          .topbanner {
+            position: relative;
+            display: flex;
+            align-items: center;
+            height: 300px;
+            margin: 0 40px;
+            border: 1px solid white;
+            border-radius: 25px;
+            background-color: rgb(131, 131, 131);
+            .banner_left {
+              margin-left: 30px;
+              width: 280px;
+              color: white;
+              .banner_title {
+                margin: 16px 0;
+                font-size: 30px;
+                font-weight: 500;
+              }
+              .banner_content {
+                line-height: 1.6;
+              }
+              .btn_gray_white2 {
+                cursor: pointer;
+                display: flex;
+                position: relative;
+                padding: 12px 14px;
+                color: white;
+                justify-content: center;
+                align-items: center;
+                width: 140px;
+                border: 1px solid white;
+                border-radius: 25px;
+                margin-top: 20px;
+                transition: all 0.2s ease;
+                &:hover {
+                  transition: all 0.4s ease;
+                  background-color: white;
+                  color: black;
+                }
+              }
+            }
+            .banner_right {
+              display: block;
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+              img {
+                width: 100px;
+                height: 100px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                border: 1px solid white;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .room_list {
+      ul {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 100px;
+        .item_wrap {
+          cursor: pointer;
+          position: relative;
+          margin: 20px 10px;
+          width: 200px;
+          height: 320px;
+          border: 1px solid #b4b4b4;
+          border-radius: 5px;
+          padding: 10px;
+          .item_img {
+            width: 200px;
+            height: 200px;
+          }
+          .item_title {
+            margin: 10px 0;
+            font-weight: 600;
+          }
+          .item_content {
+            font-size: 14px;
+            line-height: 1.2;
+            max-height: 34px;
+            overflow: hidden;
+          }
+          .item_price {
+            font-weight: 500;
+            margin: 20px 0 0 0;
+          }
+          .cart_wrap {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            padding: 10px;
+            cursor: pointer;
+            .cart {
+              width: 40px;
+              height: 40px;
+              font-size: 20px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              background-color: rgb(234, 224, 208);
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
